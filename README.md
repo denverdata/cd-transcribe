@@ -9,16 +9,28 @@ To use the Transcribe App, you need to have Python installed on your machine, as
 1. Clone this repository or download the contents of the `transcribe` directory to your local machine. 
 
     GitHub Repo: https://github.com/denverdata/cd-transcribe
-
-2. Ensure that you have Python installed. The app has been tested with Python 3.9 and above.
-
-3. Install the required packages using pip. Run the following command in the terminal:
+2. Ensure that you have Python installed. The app has been tested with Python 3.11.
+3. Setup and your virtual environment.
+    ```bash
+    pyenv virtualenv 3.11.0 venv
+    ```
+    ```bash
+    source venv/bin/activate
+    ```
+4. Install the required packages using pip. Run the following command in the terminal:
 
     ```bash
-    pip install openai-whisper
+    pip install -r requirements.txt
     ```
 
 ## Usage
+
+Be sure to activte your virtual env if you have not already
+
+On MacOS:
+```
+source venv/bin/activate
+```
 
 To transcribe an audio file, navigate to the `transcribe` directory in your terminal and run:
 
