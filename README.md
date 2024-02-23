@@ -12,10 +12,10 @@ To use the Transcribe App, you need to have Python installed on your machine, as
 2. Ensure that you have Python installed. The app has been tested with Python 3.11.
 3. Setup and your virtual environment.
     ```bash
-    pyenv virtualenv 3.11.0 venv
+    python -m venv python3.11 cdt
     ```
     ```bash
-    source venv/bin/activate
+    source cdt/bin/activate
     ```
 4. Install the required packages using pip. Run the following command in the terminal:
 
@@ -29,13 +29,13 @@ Be sure to activte your virtual env if you have not already
 
 On MacOS:
 ```
-source venv/bin/activate
+source cdt/bin/activate
 ```
 
 To transcribe an audio file, navigate to the `transcribe` directory in your terminal and run:
 
 ```bash
-python transcribe.py <audio_file_path>
+python transcribe.py <audio_file_path> --model_size "tiny"
 ```
 
 Replace `<audio_file_path>` with the path to the audio file you want to transcribe. The script will generate a text file in the same directory as the audio file, named identically but with a `.txt` extension.
